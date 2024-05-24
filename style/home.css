@@ -1,0 +1,117 @@
+body{
+    background: rgba(0, 0, 0, 0.973);
+    margin: 0;
+    padding: 0;
+}
+.Navbar__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+    /* position: fixed;
+    z-index: 1; */
+    
+}
+.Navbar__container-links{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.navbar_logo{
+    padding-right: 5rem;
+    padding-left: 2rem;
+}
+.navbar_logo img{
+    width: 80px;
+    padding-right: 2rem;
+    height: 80px;
+}
+.navbar_links{
+    display: flex;
+    flex-direction: row;
+}
+.navbar_links p{
+    font-size: 16px;
+    letter-spacing: 4px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 25px;
+    margin: 0 2rem;
+    cursor: pointer;
+}
+.navbar_links p a{
+    text-decoration: none;
+    margin: 1rem;
+    color: rgb(245, 245, 7);
+}
+.navbar_toggle{
+    margin-left: 1rem;
+    position: relative;
+}
+.navbar_toggle-menu{
+    margin: 1rem;
+}
+.navbar_toggle-menu img{
+    width: 40.59px;
+    margin-right: 2rem;
+    height: 60px;
+    cursor: pointer;
+    display:none ;
+    border: 2px rgb(245, 245, 7) solid;
+}
+.navbar_toggle-links{
+    display: flex;
+    justify-content: flex-start;
+    text-align: end;
+    padding: 0.1rem;
+    position: absolute;
+    flex-direction: column;
+    display:none ;
+    
+}
+.navbar_toggle-links p {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.navbar_toggle-links a{
+    padding-right: 1rem;
+    text-decoration: none;
+    color:rgb(245, 245, 7) ;
+}
+.esti-product-container{
+    margin: 2rem auto;
+    display: grid;
+    width: 100vw;
+    max-width: 1170px;
+    gap: 2rem;
+    /* margin: 1rem auto; */
+    grid-template-columns:repeat(4, 1fr);
+    
+}
+.esti-product{
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+}
+.esti-product img{
+    width: 200px;
+    border-radius: 1.6rem;
+}
+.esti-product .order{
+    color: rgba( 231, 231, 12, 0.74);
+}
+.esti-product a{
+    color: rgba(236, 9, 9, 0.925);
+    text-decoration: none;
+    font-size: 20px;
+}
+#view-more{
+    color:rgba(236, 9, 9, 0.925);
+    background-color:(231, 231, 12, 0.74) ;
+    padding: 1rem;
+}

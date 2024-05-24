@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esti Nigeria limited</title>
+    <link rel="stylesheet" href="./style/home.css">
+    <link rel="shortcut icon" href="./img/estilogo.jpeg" type="image/png">
+</head>
+<body>
+
+    <div class="Navbar__container">
+        <div class="Navbar__container-links">
+            <div class="navbar_logo">
+                <img src="./img/estilogo.jpeg" alt="logo">
+            </div>
+    
+            <div class="navbar_links">
+                <p><a href="#">Home</a></p>
+                <p><a href="#">About Us</a></p>
+                <p><a href="#">Shop</a></p>
+                <p><a href="#">Contact Us</a></p>
+            </div>
+        </div>
+
+        <div class="navbar_toggle">
+            <div class="navbar_toggle-menu">
+                <img src="./img/hamburger.png" alt="">
+            </div>
+
+            <div class="navbar_toggle-links">
+                <p><a href="#">Home</a></p>
+                <p><a href="#">About Us</a></p>
+                <p><a href="#">Shop</a></p>
+                <p><a href="#">Contact Us</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- list of esti product nigeria ltd -->
+
+    <div  class="esti-product-container">
+                        <div class="esti-product">
+                                <img src="./img/SoKeli-Multipurpose-Liquid-Soap-4-liters-1.jpeg" alt="">
+                                
+                                <div class="order">
+                                    <p class="order_product">Esti Disinfectactant Soup</p>
+                                    <p class="order_product">#25000</p>
+                                    <a href="">Order on whatsapp</a><br>
+                                    <span id="view-more">View More</span>
+                                </div>
+                        </div>
+
+                        <div class="esti-product">
+                            <img src="./img/SoKeli-Multipurpose-Liquid-Soap-4-liters-1.jpeg" alt="">
+                            
+                            <div class="order">
+                                <p class="order_product">Esti Disinfectactant Soup</p>
+                                <p class="order_product">#25000</p>
+                                <a href="">Order on whatsapp</a>
+                            </div>
+                    </div>
+
+                    <div class="esti-product">
+                        <img src="./img/SoKeli-Multipurpose-Liquid-Soap-4-liters-1.jpeg" alt="">
+                        
+                        <div class="order">
+                            <p class="order_product">Esti Disinfectactant Soup</p>
+                            <p class="order_product">#25000</p>
+                            <a href="">Order on whatsapp</a>
+                        </div>
+                    </div>
+
+                    <div class="esti-product">
+                        <img src="./img/SoKeli-Multipurpose-Liquid-Soap-4-liters-1.jpeg" alt="">
+                        
+                        <div class="order">
+                            <p class="order_product">Esti Disinfectactant Soup</p>
+                            <p class="order_product">#25000</p>
+                            <a href="">Order on whatsapp</a>
+                        </div>
+                </div>
+                 
+                        <div class="esti-product">
+                            <img src="./img/sokeli-handwash-1.jpeg" alt="">
+                            
+                            <div class="order">
+                                <p class="order_product">Esti Handwash</p>
+                                <p class="order_product">#25000</p>
+                                <a href="">Order on whatsapp</a>
+                            </div>
+                    </div>
+
+                    <div class="esti-product">
+                        <img src="./img/sokeli-handwash-1.jpeg" alt="">
+                        
+                        <div class="order">
+                            <p class="order_product">Esti Handwash</p>
+                            <p class="order_product">#25000</p>
+                            <a href="">Order on whatsapp</a>
+                        </div>
+                </div>
+
+                <div class="esti-product">
+                    <img src="./img/sokeli-handwash-1.jpeg" alt="">
+                    
+                    <div class="order">
+                        <p class="order_product">Esti Handwash</p>
+                        <p class="order_product">#25000</p>
+                        <a href="">Order on whatsapp</a>
+                    </div>
+            </div>
+
+            <div class="esti-product">
+                <img src="./img/sokeli-handwash-1.jpeg" alt="">
+                
+                <div class="order">
+                    <p class="order_product">Esti Handwash</p>
+                    <p class="order_product">#25000</p>
+                    <a href="">Order on whatsapp</a>
+                </div>
+        </div>
+                
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $(window).on("resize", function() {
+        if ($(window).width() <=550) {
+            $(".navbar_links").css("display", "none")
+            $(".navbar_logo img").css("width","80px")
+                                 .css("height","80px")
+            $(".navbar_toggle-menu img").css("display","flex")
+            $(".Navbar__container").css("background-color","rgba(0, 0, 0, 0)")
+            $(".navbar_toggle-menu img").on("click",  ()=> {
+                $(".navbar_toggle-links").slideToggle()
+            })
+            $(".esti-product-container").css("grid-template-columns","repeat(1, 1fr)" )
+                                        .css("z-index", "1")
+        }
+
+        else{
+            $(".navbar_links").css("display", "flex")
+                              .css("flex-direction", "row")
+             $(".navbar_logo img").css("width","80px")
+                                 .css("height","80px") 
+             $(".navbar_toggle-menu img").css("display","none")
+             $(".Navbar__container").css("background-color","black")
+             $(".navbar_toggle-links").css("display","none")
+             $(".esti-product-container").css("grid-template-columns","repeat(4, 1fr)" )
+        }
+     })
+       })
+    </script>
+</body>
+</html>
